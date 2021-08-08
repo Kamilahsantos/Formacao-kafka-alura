@@ -66,4 +66,23 @@ Realizar o download nesse [site](https://www.apache.org/dyn/closer.cgi?path=/kaf
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
 ```
  
+  ### 🖥 Configurando o numero de partições
+   
+ Dentro da pasta config:
  
+ Acesse o arquivo server.properties e troque a num.partitions para num.partitions=3
+ 
+ 
+  ### 🖥  Alterando o numero de partições de um topico
+  
+ ```
+ ./kafka-topics.sh --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --partitions 3
+ ```
+ 
+  ### 🖥  Descrevendo os consumers groups
+  
+ ```
+ ./kafka-consumer-groups.sh --all-groups --bootstrap-server localhost:9092 --describe 
+ ```
+ 
+

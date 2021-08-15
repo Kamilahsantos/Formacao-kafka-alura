@@ -5,8 +5,16 @@
 
 	<groupId>br.com.alura</groupId>
 	<artifactId>ecommerce</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommerce</name>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>service-email</module>
+		<module>service-frauddetector</module>
+		<module>service-log</module>
+		<module>service-new-order</module>
+		<module>common-kafka</module>
+	</modules>
+    <name>ecommerce</name>
 	<description>Kafka</description>
 	<properties>
 		<java.version>11</java.version>

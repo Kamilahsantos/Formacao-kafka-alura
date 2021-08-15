@@ -1,4 +1,4 @@
-# 📢  Projeto do curso da Alura Kafka: Produtores, Consumidores e streams (in progress)
+# 📢  Projeto do curso da Alura Kafka: Produtores, Consumidores e streams 
 
 
 
